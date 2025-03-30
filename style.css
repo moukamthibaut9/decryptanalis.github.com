@@ -1,0 +1,97 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    background-color: burlywood;
+    margin: 0%;
+}
+header
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.header1
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.email { width: 45%; padding: 2%; }
+.email a { text-decoration: none;font-weight: bolder;font-style: italic;font-size: large; }
+.nom_site
+{
+    color: red;
+    text-align: center;
+    width: 45%;
+}
+.header2 ul
+{
+    padding: 0 25% 0 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+.header2 ul li>a
+{
+    text-decoration: none;
+    color: red;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+.header2 ul li>a:hover { color: blue; }
+/*#####################################################################################################*/
+main
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1%;
+}
+marquee { color: white; font-weight: bold;font-size: x-large;}
+marquee span {color: brown;font-style: italic;}
+.main2
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main2 div { width: 47%;}
+.main2 div>h1 { color: blue;font-weight: bolder; font-size: x-large; }
+.main2 div>ul { list-style: none; }
+.main2 div>ul li { border: double brown 5px; }
+.main2 div>ul li>button
+{
+    width: 50%;
+    font-size: larger;
+    background-color: brown;
+    color: white;
+    margin: 0.5%;
+    padding: 0.5%;
+    border-radius: 10px;
+}
+.main2 div>ul li>button:hover { background-color: blue; color: white; }
+.main2 div>ul li>input
+{
+    width: 90%;
+    border-radius: 5px;
+}
+/*#####################################################################################################*/
+footer
+{
+    text-align: center;
+    background-color: gray;
+}
+footer p>a { text-decoration: none;color: red;font-size: larger;font-style: italic; }
+footer p>a:hover { color: blue; }
+/*#####################################################################################################*/
+@media screen and (max-width:650px){
+    .main2 { flex-direction: column; }
+    .main2 div { width: 100%;}
+    @media screen and (max-width:500px){
+        .header1 { flex-direction: column; }
+        .email, .nom_site { width: 100%; text-align: center; }
+    }
+}

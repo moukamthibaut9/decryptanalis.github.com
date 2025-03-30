@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>DECRYPTAGE</title>
+    </head>
+    <body>
+        <header>
+            <div  class="header1">
+                <div class="email">
+                    <a href="mailto:elouna@gmail.com">M'envoyer un e-mail</a>
+                </div>
+                <div class="nom_site">
+                    <h1>DECRYPTALIS</h1>
+                </div>
+            </div>
+            <div class="header2">
+                <ul>
+                    <li><a href="#.html">Acceuil</a></li>
+                    <li><a href="#.html">Contacts</a></li>
+                    <li><a href="#.html">Services</a></li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="main1">
+                <p>
+                    <marquee>Hello! Bienvenu(e)s sur <span>DECRYPTALIS</span>, la meilleure
+                    plateforme pour chiffrer ou dechiffrer vos messages quelqu'ils soient.</marquee>
+                </p>
+                <p>
+                    Positionnez-vous dans la bonne zone selon que vous voulez chiffrer ou dechiffrer un message. <br> 
+                    Dans le premier champ, entrer votre message et ensuite entrer la cle dans le second. <br>
+                    Pour finir cliquer sur le bouton juste en haut du premier champ pour voir votre message chiffre 
+                    ou dechiffre qui apparaitra dans un troisieme champ.
+                </p> 
+            </div>
+            <div class="main2">
+                <div>
+                    <h1>CHIFFREMENT</h1>
+                    <ul>
+                        <li class="crypt_father_bloc">
+                            <button class="crypt_btn">Par decalage</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte clair" class="decrypted_text"><br>
+                            <input type="text" maxlength="2" placeholder="Ici, entrez la clé de chiffrement(un chiffre entre 1 et 25)" class="crypt_key"><br>
+                        </li>
+                        <li class="crypt_father_bloc">
+                            <button class="crypt_btn">Par Subtitution</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte clair" class="decrypted_text"><br>
+                            <input type="text" placeholder="Ici, entrez la clé de chiffrement(toute l'alphabet en desordre)" class="crypt_key"><br>
+                        </li>
+                        <li class="crypt_father_bloc">
+                            <button class="crypt_btn">De Vigenere</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte clair" class="decrypted_text"><br>
+                            <input type="text" placeholder="Ici, entrez la clé de chiffrement(un mot)" class="crypt_key"><br>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>DECHIFFREMENT</h1>
+                    <ul>
+                        <li class="decrypt_father_bloc">
+                            <button class="decrypt_btn">Par decalage</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte chiffré" class="crypted_text"><br>
+                            <input type="text" maxlength="2" placeholder="Ici, entrez la clé de déchiffrement" class="decrypt_key"><br>
+                        </li>
+                        <li class="decrypt_father_bloc">
+                            <button class="decrypt_btn">Par subtitution</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte chiffré" class="crypted_text"><br>
+                            <input type="text" placeholder="Ici, entrez la clé de déchiffrement" class="decrypt_key"><br>
+                        </li>
+                        <li class="decrypt_father_bloc">
+                            <button class="decrypt_btn">De Vigenere</button><br>
+                            <input type="text" placeholder="Entrez ici votre texte chiffré" class="crypted_text"><br>
+                            <input type="text" placeholder="Ici, entrez la clé de déchiffrement" class="decrypt_key"><br>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </main>
+        <footer>
+            <p><a href="#.html">A propos de nous</a></p>
+            <p><a href="#.html">Notre politique de confidentialite</a></p>
+            <hr><hr>
+            <p>#################  Decryptalis@2023  ################</p>
+        </footer>
+
+        <script src="crypt_script.js" lang="javascript"> </script>
+        <script src="decrypt_script.js" lang="javascript"> </script>
+    </body>
+</html>
